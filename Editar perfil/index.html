@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Pet - Editar Perfil</title>
+    <link rel="stylesheet" href="../Editar perfil/styles.css">
+</head>
+<body>
+
+<header>
+    <h1>HOTEL PET</h1>
+    <div style="display: flex; align-items: center;">
+        <span>João da Silva</span>
+        <img src="../img/joao.png" alt="Avatar do usuário">
+    </div>
+</header>
+
+<nav class="menu-item">
+    <ul>
+        <li><a data-page="../Pets/index.html"><i class="menu-item"></i> Pets</a></li>
+        <li><a data-page="../Reserva/index.html"><i class="menu-item"></i> Reservas</a></li>
+        <li><a data-page="../usuario/index.html" class=""><i class="menu-item"></i> Usuários</a></li>
+        <li><a data-page="../configuração/index.html"><i class="menu-item"></i>Configurações</a></li>
+        
+    </ul>
+          </nav>
+
+<div class="container">
+    <main>
+    <form>
+        <h3>Editar Perfil</h3>
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" placeholder="joaodasilva@pet.com" required>
+
+        <label for="nome">Nome *</label>
+        <input type="text" id="nome" placeholder="João" required>
+
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" id="sobrenome" placeholder="da Silva" required>
+
+        <label for="telefone">Telefone *</label>
+        <input type="tel" id="telefone" placeholder="+55 (73) 99876-8943" required>
+
+        <label for="funcao">Função</label>
+        <select id="funcao">
+            <option value="funcionario">Funcionário</option>
+            <option value="cliente">Cliente</option>
+            <option value="gerente">Gerente</option>
+        </select>
+
+        <label for="imagemPerfil">Imagem do Perfil *</label>
+        <input type="file" id="imagemPerfil" accept="image/*">
+
+        <div class="button-container">
+            <button type="reset" class="btn">Limpar</button>
+            <button type="submit" class="btn">Salvar</button>
+        </div>
+    </form>
+</main>
+</div>
+
+<script src="../app.js"></script>
+</body>
+</html>

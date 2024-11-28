@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Pet - Ver Pet</title>
+    <link rel="stylesheet" href="../Ver pet/styles.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>HOTEL PET</h1>
+        <div style="display: flex; align-items: center;">
+            <span>João da Silva</span>
+            <img src="../img/joao.png" alt="Avatar do usuário">
+           
+        </div>
+    </header>
+    
+    <!-- Menu de Navegação -->
+    <nav class="menu-item">
+        <ul>
+            <li><a data-page="../Pets/index.html"><i class="menu-item"></i> Pets</a></li>
+            <li><a data-page="../Reserva/index.html"><i class="menu-item"></i> Reservas</a></li>
+            <li><a data-page="../usuario/index.html" class=""><i class="menu-item"></i> Usuários</a></li>
+            <li><a data-page="../configuração/index.html"><i class="menu-item"></i>Configurações</a></li>
+            
+        </ul>
+              </nav>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        <main>
+            
+            <form >
+                <h2>Ver Pet</h2>
+                <!-- Botões de Ação -->
+                <section class="actions">
+                    <div class="action-buttons">
+                        <button  data-page="../Editar Pet/index.html">Editar</button>
+                        <button type="reset" class="btn">Deletar</button>
+                     </div>
+                 </section>
+
+                 <div class="details">
+                    <p><strong>Proprietário:</strong> José da Silva</p> <br>
+                    <p><strong>ID:</strong> 1234509876</p> <br>
+                    <p><strong>Nome:</strong> Max</p> <br>
+                    <p><strong>Tipo:</strong> Cachorro</p> <br>
+                    <p><strong>Raça:</strong> Pastor Alemão</p> <br>
+                    <p><strong>Imagem:</strong></p>
+                    <div class="image-placeholder"></div>
+                </div>
+           
+
+                <div class="reservas">
+                    <p><strong>Reservas:</strong></p>
+                    <ul>
+                        <li><a href="#">02/05/2021 - 07/05/2021</a> (completa)</li>
+                        <li><a href="#">02/05/2021 - 07/05/2021</a> (em andamento)</li>
+                    </ul>
+                </div>
+
+            <!-- Botão de Voltar -->
+             
+            <div class="button-container">
+                <button class= "voltar-button" data-page="../Pets/index.html">Voltar</button>
+        </div>
+    </section>
+    </form>
+        </main>
+    </div>
+
+    <script src="../app.js"></script>
+</body>
+</html>

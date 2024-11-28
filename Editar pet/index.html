@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Pet - Editar Pet</title>
+    <link rel="stylesheet" href="../Editar pet/styles.css">
+</head>
+<body>
+
+<header>
+    <h1>HOTEL PET</h1>
+    <div style="display: flex; align-items: center;">
+        <span>João da Silva</span>
+        <img src="../img/joao.png" alt="Avatar do usuário">
+    </div>
+</header>
+
+<nav class="menu-item">
+    <ul>
+        <li><a data-page="../Pets/index.html"><i class="menu-item"></i> Pets</a></li>
+        <li><a data-page="../Reserva/index.html"><i class="menu-item"></i> Reservas</a></li>
+        <li><a data-page="../usuario/index.html" class=""><i class="menu-item"></i> Usuários</a></li>
+        <li><a data-page="../configuração/index.html"><i class="menu-item"></i>Configurações</a></li>
+        
+    </ul>
+          </nav>
+
+<div class="container">
+    <main>
+    <form>
+        <h3>Editar Pet</h3>
+        
+        <label for="nomePet">Nome *</label>
+        <input type="text" id="nomePet" placeholder="Nome" required>
+        
+        <label for="tipoPet">Tipo *</label>
+        <select id="tipoPet" required>
+            <option value="">Selecione o tipo</option>
+            <option value="cachorro">Cachorro</option>
+            <option value="gato">Gato</option>
+        </select>
+        
+        <label for="racaPet">Raça *</label>
+        <input type="text" id="racaPet" placeholder="Raça" required>
+        
+        <label for="tamanhoPet">Tamanho *</label>
+        <select id="tamanhoPet" required>
+            <option value="">Selecione o tamanho</option>
+            <option value="pequeno">Pequeno</option>
+            <option value="medio">Médio</option>
+            <option value="grande">Grande</option>
+        </select>
+        
+        <label for="imagemPerfil">Imagem do Perfil *</label>
+        <input type="file" id="imagemPerfil" accept="image/*">
+        
+        <div class="button-container">
+            <button type="reset" class="btn">Limpar</button>
+            <button type="submit" class="btn">Salvar</button>
+        </div>
+    </form>
+</main>
+</div>
+
+<script src="../app.js"></script>
+</body>
+</html>

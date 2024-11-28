@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Pet - Editar Reserva</title>
+    <link rel="stylesheet" href="../Editar reserva em andamento/styles.css">
+</head>
+<body>
+
+<header>
+    <h1>HOTEL PET</h1>
+    <div style="display: flex; align-items: center;">
+        <span>João da Silva</span>
+        <img src="../img/joao.png" alt="Avatar do usuário">
+       
+    </div>
+</header>
+
+<nav class="menu-item">
+    <ul>
+        <li><a data-page="../Pets/index.html"><i class="menu-item"></i> Pets</a></li>
+        <li><a data-page="../Reserva/index.html"><i class="menu-item"></i> Reservas</a></li>
+        <li><a data-page="../usuario/index.html" class=""><i class="menu-item"></i> Usuários</a></li>
+        <li><a data-page="../configuração/index.html"><i class="menu-item"></i>Configurações</a></li>
+        
+    </ul>
+          </nav>
+
+<div class="container">
+    <form>
+        <h3>Editar Reserva em Andamento</h3>
+
+        <!-- Proprietário -->
+        <label for="proprietario">Proprietário *</label>
+        <input type="text" id="Proprietário" placeholder="Proprietário" required>
+
+        <!-- Pet -->
+        <label for="pet">Pet *</label>
+        <input type="text" id="pet" placeholder="pet"  required>
+
+        <!-- Período -->
+        <label for="periodo">Período *</label>
+        <input type="date" id="data_inicio" name="data_inicio" required>
+        <input type="date" id="data_fim" name="data_fim"  required>
+
+        <!-- Notas -->
+        <label for="notas">Notas</label>
+        <textarea id="notas" name="notas" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit." required></textarea>
+
+        <!-- Status -->
+        <label for="status">Status *</label>
+        <select id="status" name="status" required>
+            <option value="em-andamento" selected>Em andamento</option>
+        </select>
+
+        <!-- Anotações do Funcionário -->
+        <label for="anotacoes">Anotações do Funcionário</label>
+        <textarea id="anotacoes" name="anotacoes" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit." required></textarea>
+
+        <!-- Imagem do Pet -->
+        <label for="imagemPerfil">Imagem do Pet *</label>
+        <input type="file" id="imagemPerfil" accept="image/*">
+
+        <!-- Imagem do Pet -->
+        <div class="password-container">
+        <label for="diaria">Total das diárias: *</label>
+        <input type="diaria" id="Valor da diaria" placeholder="Valor da diaria" required>
+        </div>
+
+        <!-- Botões -->
+        <div class="button-container">
+            <button type="reset" class="btn">Limpar</button>
+            <button type="submit" class="btn">Salvar</button>
+        </div>
+    </form>
+</div>
+
+<script src="../app.js"></script>
+</body>
+</html>

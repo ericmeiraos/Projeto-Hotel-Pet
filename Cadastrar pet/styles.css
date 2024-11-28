@@ -1,0 +1,221 @@
+/* Resetando margens e paddings padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    background-image: url('G:/Meu Drive/Estudos/UESB/6ª Semestre/Programação WEB/Hotel Pet/img/pet.jpg'); 
+     background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+
+/* Estilizando o header */
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Estilizando o menu horizontal */
+nav {
+    background-color: #2e3b4e;
+    color: #fff;
+    width: 100%;
+    padding: 0px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* Centralizando a lista */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+/* Estilo dos itens de menu */
+nav ul li {
+    font-size: 18px;
+    margin: 0 20px;
+    cursor: pointer;
+    position: relative;  
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease; 
+    text-align: center;
+}
+
+nav ul li:hover {
+    background-color: #4f6377;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);  
+}
+
+/* Estilizando o submenu */
+nav .submenu {
+    display: none;  
+    position: absolute;
+    top: 80%;
+    left: 0;
+    background-color: #4f6377;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    padding: 10px;
+    list-style-type: none;
+    min-width: 200px;
+    z-index: 1000;  
+}
+
+/* Estilizando o container geral */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 30px;
+    width: 100%; 
+   
+}
+/* Estilizando o formulário */
+form {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto; 
+}
+
+/* Estilizando os campos do formulário */
+form input[type="text"],
+form select {
+    width: 100%; 
+    padding: 15px; 
+    margin-bottom: 20px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 16px; 
+}
+
+/* Títulos dentro do formulário */
+form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilizando os campos de input e select */
+form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fafafa;
+}
+
+/* Estilizando os botões */
+form button {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: auto;  
+}
+
+/* Estilo para o botão de salvar */
+form button[type="submit"] {
+    background-color: #4CAF50; 
+}
+
+form button[type="submit"]:hover {
+    background-color: #45a049; 
+}
+
+/* Estilo para o botão de reset */
+form button[type="reset"] {
+    background-color: #f44336; 
+}
+
+form button[type="reset"]:hover {
+    background-color: #e53935; 
+}
+
+/* Estilizando o container dos botões para centralizá-los */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-container .btn {
+    margin: 0 10px; 
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+
+/* Estilo padrão do link */
+nav ul li a {
+    text-decoration: none;
+    color: white; 
+    padding: 10px;
+    display: block;
+}
+
+/* Estilo ao passar o mouse */
+nav ul li a:hover {
+    color: #007BFF; 
+}
+
+/* Cor temporária ao clicar */
+nav ul li a.clicked {
+    color: white; 
+    background-color: #007BFF; 
+    border-radius: 5px;
+}

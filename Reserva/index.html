@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Reserva/styles.css">
+    <title>Reservas</title>
+</head>
+<body>
+    <header>
+        <h1>HOTEL PET</h1>
+        <div style="display: flex; align-items: center;">
+            <span>João da Silva</span>
+           <img src="../img/joao.png" alt="Avatar do usuário">
+           
+        </div>
+    </header>
+    
+    <nav class="menu-item">
+        <ul>
+            <li><a data-page="../Pets/index.html"><i class="menu-item"></i> Pets</a></li>
+            <li><a data-page="../Reserva/index.html"><i class="menu-item"></i> Reservas</a></li>
+            <li><a data-page="../usuario/index.html" class=""><i class="menu-item"></i> Usuários</a></li>
+            <li><a data-page="../configuração/index.html"><i class="menu-item"></i>Configurações</a></li>
+            
+        </ul>
+              </nav>
+
+        <!-- Seção de reservas -->
+        <div class="container">
+            <main>
+                
+                <!-- Formulário de Filtros -->
+                <form>
+                    <h2>Reservas</h2>
+                    <br>
+                    <button  data-page="../Fazer Reserva/index.html">+ Novo Reserva</button>
+                    <br>
+                    <br>
+
+                  
+                    <ul class="list">
+
+                        <label for="id">Id</label>
+                        <input type="text" id="id" name="id" >
+
+                        <label for="periodo">Período</label>
+                        <input type="date" id="data_inicio" name="data_inicio">
+                        <input type="date" id="data_fim" name="data_fim">
+
+                        <label for="proprietario">Proprietário</label>
+                        <input type="text" id="proprietario" name="proprietario">
+
+                        <label for="total">Total</label>
+                        <input type="text" id="total_min" name="total_min" placeholder="R$ 0,00">
+                        <input type="text" id="total_max" name="total_max" placeholder="R$ 0,00">
+
+                        <label for="status">Status</label>
+                        <select id="status" name="status">
+                            <option value=""></option>
+                            <option value="reservada">Reservada</option>
+                            <option value="Em andamento">Em andamento</option>
+                            <option value="finalizado">Finalizado</option>
+                        </select>
+
+                        <label for="pet">Pet</label>
+                        <input type="text" id="pet" name="pet">
+                    </ul>
+
+
+            <!-- Tabela de Reservas -->
+            <table>
+                <thead>
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <th>Id</th>
+                        <th>Pet</th>
+                        <th>Chegada</th>
+                        <th>Partida</th>
+                        <th>Status</th>
+                        <th>Total</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>12349884501</td>
+                        <td>Max</td>
+                        <td>02/05/2021</td>
+                        <td>07/05/2020</td>
+                        <td><span>Reservada</span></td>
+                        <td>R$ 40,00</td>
+                        <td><a data-page="../Editar reserva/index.html">Editar</a> |
+                            <a data-page="../ver reserva/index.html">Visualizar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>12349884502</td>
+                        <td>Ginger</td>
+                        <td>02/05/2021</td>
+                        <td>07/05/2020</td>
+                        <td><span>Em andamento</span></td>
+                        <td>R$ 40,00</td>
+                        <td><a data-page="../Editar reserva/index.html">Editar</a> |
+                            <a data-page="../ver reserva/index.html">Visualizar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>12349884503</td>
+                        <td>Max</td>
+                        <td>02/05/2021</td>
+                        <td>07/05/2020</td>
+                        <td><span>Finalizado</span></td>
+                        <td>R$ 40,00</td>
+                        <td><a data-page="../Editar reserva/index.html">Editar</a> |
+                            <a data-page="../ver reserva/index.html">Visualizar</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="button-container">
+                <button type="reset">Limpar</button>
+                <button type="submit">Pesquisar</button>
+               
+            </div>
+        </section>
+    </form>
+</main>
+<script src="../app.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Pet - Criar Conta</title>
+    <link rel="stylesheet" href="../Criar conta/styles.css">
+</head>
+<body>
+
+<!-- Cabeçalho -->
+<header>
+    <h1>HOTEL PET</h1>
+    <div style="display: flex; align-items: center;">
+        <span>João da Silva</span>
+        <img src="../img/joao.png" alt="Avatar do usuário">
+    </div>
+</header>
+
+<!-- Navegação -->
+<!--<nav class="menu-item">
+    <ul>
+        <li><a data-page="../Pets/index.html"><i class="menu-item"></i> Pets</a></li>
+        <li><a data-page="../Reserva/index.html"><i class="menu-item"></i> Reservas</a></li>
+        <li><a data-page="../usuario/index.html" class=""><i class="menu-item"></i> Usuários</a></li>
+        <li><a data-page="../configuração/index.html"><i class="menu-item"></i>Configurações</a></li>
+        
+    </ul>
+          </nav>-->
+
+<div class="container">
+
+    <main class="create-account">
+        <div class="form-container">
+            
+            <form>
+                <h2>Criar Conta</h2>
+                <br>
+                <label for="login">Login</label>
+                
+                <input type="text" id="login" placeholder="Login" required>
+                
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder="Senha" required>
+            
+                <p>Já tem conta? <a href="../Login/index.html">Login</a></p>
+                <br>
+                
+                <div class="buttons">
+                    <button class="voltar-button" onclick="history.back()">Voltar</button>
+                    <button class="criar-conta-button" type="submit">Criar conta</button>
+                </div>
+            </form>
+            
+        </div>
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

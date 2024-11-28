@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Pet - Usuários</title>
+    <link rel="stylesheet" href="../Usuario/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>HOTEL PET</h1>
+        <div style="display: flex; align-items: center;">
+            <span>João da Silva</span>
+            <img src="../img/joao.png" alt="Avatar do usuário">
+           
+        </div>
+    </header>
+    
+  <!--   <nav>
+        <ul>
+            <li class="menu-item">Pets
+                <ul class="submenu">
+                    <li>Editar pet</li>
+                    <li>Pets</li>
+                    <li>Ver pet</li>
+                </ul>
+            </li>
+            <li class="menu-item">Reservas
+                <ul class="submenu">
+                    <li>Cadastrar reserva</li>
+                    <li>Editar reserva</li>
+                    <li>Editar reserva em andamento</li>
+                    <li>Editar reserva finalizada</li>
+                    <li>Reserva</li>
+                    <li>Ver reserva</li>
+                </ul>
+            </li>
+            <li class="menu-item">Usuário
+                <ul class="submenu">
+                    <li>Cadastrar usuários</li>
+                    <li>Editar perfil</li>
+                    <li>Usuários</li>
+                </ul>
+            </li>
+            <li>Configurações</li>
+        </ul>
+    </nav>-->
+    <nav class="menu-item">
+        <ul>
+            <li><a data-page="../Pets/index.html"><i class="menu-item"></i> Pets</a></li>
+            <li><a data-page="../Reserva/index.html"><i class="menu-item"></i> Reservas</a></li>
+            <li><a data-page="../usuario/index.html" class=""><i class="menu-item"></i> Usuários</a></li>
+            <li><a data-page="../configuração/index.html"><i class="menu-item"></i>Configurações</a></li>
+            
+        </ul>
+              </nav>
+    <!-- Conteúdo principal -->
+    <div class="container">
+        <main>
+            
+            
+            <!-- Filtros -->
+            <form >
+                <h2>Usuários</h2>
+                <!-- Seção de ações -->
+        <section class="actions">
+            <h3>Ações</h3>
+            <div class="action-buttons">
+                <button  data-page="../Cadastrar usuarios/index.html">+ Novo Usuario</button>
+                <button>Remover</button>
+                <button>Mudar Status</button>
+            </div>
+            <div class="filter-options">
+                <h3>Visualizar por: </h3>
+                <button>Usuários</button>
+                <button>Função</button>
+            </div>
+        </section>
+
+                 <ul class="list">
+
+                    <label for="ID">ID *</label>
+                    <input type="text" placeholder="ID">
+
+                    <label for="E-mail">E-mail *</label>
+                    <input type="text" placeholder="Email">
+
+                    <label for="Nome">Nome *</label>
+                    <input type="text" placeholder="Nome">
+
+                    <label for="Criado Em: ">Criado Em: *</label>
+                    <input type="date" id="data_inicio" placeholder="2021-05-02" required>
+
+                    <label for="Status">Status *</label>
+                    <select>
+                        <option value=""></option>
+                        <option value="Ativo">Ativo</option>
+                        <option value="Inativo">Inativo</option>
+                    </select>
+
+                    <label for="Função">Função *</label>
+                    <select>
+                        <option value=""></option>
+                        <option value="Gerente">Gerente</option>
+                        <option value="Funcionário">Funcionário</option>
+                        <option value="Cliente">Cliente</option>
+                    </select>
+                </ul>
+      
+
+        <!-- Tabela de Usuários -->
+       
+            <table>
+                <thead>
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <th>Foto</th>
+                        <th>Email</th>
+                        <th>Nome</th>
+                        <th>Função</th>
+                        <th>Status</th>
+                        <th>Criado em</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><img src="user1.png" alt="User" width="30"></td>
+                        <td>joaodasilva@pet.com</td>
+                        <td>João da Silva</td>
+                        <td>Gerente</td>
+                        <td>Ativo</td>
+                        <td>19/02/2020</td>
+                        <td><a data-page="../Editar perfil/index.html">Editar</a> |
+                            <a data-page="../ver perfil/index.html">Visualizar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><img src="user2.png" alt="User" width="30"></td>
+                        <td>maria@pet.com</td>
+                        <td>Maria da Silva</td>
+                        <td>Funcionário</td>
+                        <td>Inativo</td>
+                        <td>19/02/2020</td>
+                        <td><a data-page="../Editar perfil/index.html">Editar</a> |
+                            <a data-page="../ver perfil/index.html">Visualizar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><img src="user3.png" alt="User" width="30"></td>
+                        <td>joesdasilva@pet.com</td>
+                        <td>José da Silva</td>
+                        <td>Cliente</td>
+                        <td>Ativo</td>
+                        <td>19/02/2020</td>
+                        <td><a data-page="../Editar perfil/index.html">Editar</a> |
+                            <a data-page="../ver perfil/index.html">Visualizar</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="button-container">
+                <button type="reset">Limpar</button>
+                <button type="submit">Pesquisar</button>
+               
+            </div>
+        </section>
+    </form>
+</main>
+<script src="../app.js"></script>
+</body>
+</html>
